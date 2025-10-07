@@ -1,4 +1,4 @@
-# 🔎 Awesome Hacker Search Engines 🧠
+# 🔎 Awesome Hacker Search Engines💀
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ![Security Badge](https://img.shields.io/badge/Category-Security%20Tools-blue.svg)
@@ -8,7 +8,7 @@
 
 Note: Use responsibly. Only test assets you’re authorized to assess. Always follow local laws and each service’s terms.
 
-# ⭐ TABLE OF CONTENTS
+#   TABLE OF CONTENTS
 
 A neatly organized, bold index of all available sections for quick navigation.
 
