@@ -613,7 +613,3 @@ These can be useful for osint and social engineering.
 *   [CVE Trends](https://cvetrends.com/) - Monitor trending CVEs in real-time; crowdsourced intel sourced from Twitter, NIST NVD, Reddit, and GitHub
 
 * * *
-
-If you want to propose changes, just open an [issue](https://github.com/edoardottt/awesome-hacker-search-engines/issues) or a [pull request](https://github.com/edoardottt/awesome-hacker-search-engines/pulls).
-
-[edoardottt.com](https://edoardottt.com/) to contact me.
