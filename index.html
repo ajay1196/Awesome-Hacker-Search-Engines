@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curated list of hacker search engines for penetration testing, OSINT, and cybersecurity">
+  <title>🔎 Awesome Hacker Search Engines 💀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============== HEADER ============== -->
+<header>
+  <div class="container">
+    <h1>🔎 Awesome Hacker Search Engines 💀</h1>
+    
+    <div class="badges">
+      <a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener">
+        <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome">
+      </a>
+      <img src="https://img.shields.io/badge/Category-Security%20Tools-blue.svg" alt="Security">
+      <a href="https://github.com/123tool" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/Source-123tool-orange.svg" alt="Source">
+      </a>
+    </div>
+
+    <blockquote>
+      A curated list of awesome search engines useful during 
+      <strong>Penetration Testing, Vulnerability Assessments, Red/Blue Team Operations, Bug Bounty</strong>, 
+      and other cybersecurity operations.
+    </blockquote>
+
+    <p class="note">
+      ⚠️ <strong>Note:</strong> Use responsibly. Only test assets you're authorized to assess. 
+      Always follow local laws and each service's terms.
+    </p>
+
+    <!-- CONTROL BUTTONS -->
+    <div class="controls">
+      <input 
+        type="search" 
+        id="globalSearch" 
+        placeholder="🔍 Search any resource..." 
+        autocomplete="off"
+      >
+      <button id="darkModeToggle" class="btn">🌙 Dark Mode</button>
+      <button id="exportJSON" class="btn">📥 Export JSON</button>
+      <button id="exportPDF" class="btn">📄 Export PDF</button>
+      <button id="updateData" class="btn">🔄 Update from GitHub</button>
+    </div>
+
+    <div id="stats" class="stats">
+      <span>Total Resources: <strong id="totalCount">0</strong></span>
+      <span>Visible: <strong id="visibleCount">0</strong></span>
+    </div>
+  </div>
+</header>
+
+<!-- ============== TABLE OF CONTENTS ============== -->
+<nav id="toc" class="container">
+  <h2>📑 Table of Contents</h2>
+  <div class="toc-grid">
+    <a href="#general-search-engines">General Search Engines</a>
+    <a href="#servers">Servers</a>
+    <a href="#vulnerabilities">Vulnerabilities</a>
+    <a href="#exploits">Exploits</a>
+    <a href="#attack-surface">Attack Surface</a>
+    <a href="#code">Code</a>
+    <a href="#email-addresses">Email Addresses</a>
+    <a href="#domains">Domains</a>
+    <a href="#urls">URLs</a>
+    <a href="#dns">DNS</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#wifi-networks">WiFi Networks</a>
+    <a href="#device-information">Device Info</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#leaks">Leaks</a>
+    <a href="#hidden-services">Hidden Services</a>
+    <a href="#social-networks">Social Networks</a>
+    <a href="#phone-numbers">Phone Numbers</a>
+    <a href="#images">Images</a>
+    <a href="#threat-intelligence">Threat Intelligence</a>
+    <a href="#web-history">Web History</a>
+    <a href="#files">Files</a>
+    <a href="#surveillance-cameras">Surveillance Cameras</a>
+    <a href="#crypto">Crypto</a>
+    <a href="#people">People</a>
+    <a href="#miscellaneous">Miscellaneous</a>
+    <a href="#not-working">Not Working / Paused</a>
+  </div>
+</nav>
+
+<!-- ============== MAIN CONTENT ============== -->
+<main class="container">
+
+<!-- GENERAL SEARCH ENGINES -->
+<section id="general-search-engines" data-category="General Search Engines">
+  <h2>🌐 General Search Engines</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://www.google.com/" target="_blank">Google</a></td><td>General-purpose search engine with powerful operators (dorks).</td></tr>
+      <tr><td><a href="https://www.bing.com/" target="_blank">Bing</a></td><td>Microsoft's search engine with rich filtering.</td></tr>
+      <tr><td><a href="http://www.yahoo.com/" target="_blank">Yahoo!</a></td><td>Web search and content portal.</td></tr>
+      <tr><td><a href="https://yandex.com/" target="_blank">Yandex</a></td><td>Russian search engine with strong image search.</td></tr>
+      <tr><td><a href="https://www.ask.com/" target="_blank">Ask</a></td><td>Q&A-centric search engine.</td></tr>
+      <tr><td><a href="https://www.baidu.com/" target="_blank">Baidu</a></td><td>Popular Chinese search engine.</td></tr>
+      <tr><td><a href="https://searx.be/?q=" target="_blank">SearXNG</a></td><td>Privacy-friendly metasearch (self-hostable).</td></tr>
+      <tr><td><a href="http://www.exalead.com/search/web/" target="_blank">Exalead</a></td><td>Enterprise search platform (web search legacy).</td></tr>
+      <tr><td><a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a></td><td>Privacy-first search engine.</td></tr>
+      <tr><td><a href="https://swisscows.com/en" target="_blank">Swisscows</a></td><td>Privacy-focused search engine from Switzerland.</td></tr>
+      <tr><td><a href="https://www.naver.com/" target="_blank">Naver</a></td><td>Korean portal and search engine.</td></tr>
+      <tr><td><a href="https://search.aol.com/" target="_blank">AOL</a></td><td>Web search portal.</td></tr>
+      <tr><td><a href="https://search.brave.com/" target="_blank">Brave Search</a></td><td>Privacy-centric search with its own index.</td></tr>
+      <tr><td><a href="https://yep.com/" target="_blank">Yep</a></td><td>Search engine by Ahrefs.</td></tr>
+      <tr><td><a href="https://gibiru.com/" target="_blank">Gibiru</a></td><td>Privacy search engine.</td></tr>
+      <tr><td><a href="https://kagi.com/" target="_blank">Kagi</a></td><td>Subscription-based, ad-free search engine.</td></tr>
+      <tr><td><a href="https://stract.com/" target="_blank">Stract</a></td><td>Lightweight privacy-focused search.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SERVERS -->
+<section id="servers" data-category="Servers">
+  <h2>🖥️ Servers</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://shodan.io/" target="_blank">Shodan</a></td><td>Search engine for Internet-connected devices and services.</td></tr>
+      <tr><td><a href="https://search.censys.io/" target="_blank">Censys Search</a></td><td>Internet-wide scanning and certificates search.</td></tr>
+      <tr><td><a href="https://www.onyphe.io/" target="_blank">Onyphe</a></td><td>Cyber threat intelligence search engine.</td></tr>
+      <tr><td><a href="https://www.zoomeye.org/" target="_blank">ZoomEye</a></td><td>Global cyberspace mapping.</td></tr>
+      <tr><td><a href="https://viz.greynoise.io/" target="_blank">GreyNoise</a></td><td>Separates Internet background noise from targeted scanning.</td></tr>
+      <tr><td><a href="https://natlas.io/" target="_blank">Natlas</a></td><td>Open-source scalable network scanning.</td></tr>
+      <tr><td><a href="https://netlas.io/" target="_blank">Netlas</a></td><td>Search and monitor Internet-exposed assets.</td></tr>
+      <tr><td><a href="https://fofa.info/" target="_blank">FOFA</a></td><td>Cyberspace search engine (China).</td></tr>
+      <tr><td><a href="https://quake.360.net/quake/#/index" target="_blank">Quake</a></td><td>Internet mapping by 360.</td></tr>
+      <tr><td><a href="https://hunter.how/" target="_blank">Hunter</a></td><td>Internet search engine for security researchers.</td></tr>
+      <tr><td><a href="https://getodin.com/" target="_blank">ODIN</a></td><td>Search across scanned Internet assets.</td></tr>
+      <tr><td><a href="https://magnify.modat.io/" target="_blank">Modat Magnify</a></td><td>Large Internet device "DNA" dataset.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- VULNERABILITIES -->
+<section id="vulnerabilities" data-category="Vulnerabilities">
+  <h2>🛡️ Vulnerabilities</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://nvd.nist.gov/vuln/search" target="_blank">NIST NVD</a></td><td>US National Vulnerability Database (CVEs, CVSS).</td></tr>
+      <tr><td><a href="https://cve.mitre.org/cve/search_cve_list.html" target="_blank">MITRE CVE</a></td><td>Official CVE IDs and details.</td></tr>
+      <tr><td><a href="https://github.com/advisories" target="_blank">GitHub Advisory Database</a></td><td>GitHub-originated advisories and CVEs.</td></tr>
+      <tr><td><a href="https://www.cloudvulndb.org/" target="_blank">CloudVulnDB</a></td><td>Open cloud vulnerability database.</td></tr>
+      <tr><td><a href="https://osv.dev/list" target="_blank">OSV.dev</a></td><td>Open Source Vulnerabilities index.</td></tr>
+      <tr><td><a href="https://vulners.com/" target="_blank">Vulners</a></td><td>Aggregated security intelligence and vuln search.</td></tr>
+      <tr><td><a href="https://www.opencve.io/cve" target="_blank">OpenCVE</a></td><td>Track CVE updates and get alerts.</td></tr>
+      <tr><td><a href="https://security.snyk.io/" target="_blank">Snyk Vulnerability DB</a></td><td>Open source vulnerability database.</td></tr>
+      <tr><td><a href="https://www.mend.io/vulnerability-database/" target="_blank">Mend Vulnerability DB</a></td><td>Large OSS vulnerability database.</td></tr>
+      <tr><td><a href="https://www.rapid7.com/db/" target="_blank">Rapid7 DB</a></td><td>Vulnerabilities and exploits database.</td></tr>
+      <tr><td><a href="https://www.cvedetails.com/" target="_blank">CVE Details</a></td><td>CVE database and stats.</td></tr>
+      <tr><td><a href="https://vulniq.com/" target="_blank">VulnIQ</a></td><td>Vulnerability intelligence and management.</td></tr>
+      <tr><td><a href="https://synapsint.com/" target="_blank">SynapsInt</a></td><td>Unified OSINT research tool.</td></tr>
+      <tr><td><a href="https://avd.aquasec.com/" target="_blank">Aqua AVD</a></td><td>Cloud native and OSS vulnerabilities.</td></tr>
+      <tr><td><a href="https://vulmon.com/" target="_blank">Vulmon</a></td><td>Vulnerability and exploit search engine.</td></tr>
+      <tr><td><a href="https://vuldb.com/" target="_blank">VulDB</a></td><td>Independent vulnerability database.</td></tr>
+      <tr><td><a href="https://in.scanfactory.io/cvemon.html" target="_blank">ScanFactory CVE Monitor</a></td><td>Real-time security monitoring.</td></tr>
+      <tr><td><a href="https://www.zerodayinitiative.com/advisories/published/" target="_blank">ZDI Advisories</a></td><td>Trend Micro's Zero Day Initiative.</td></tr>
+      <tr><td><a href="https://bugs.chromium.org/p/project-zero/issues/list" target="_blank">Google Project Zero</a></td><td>Vulnerability research, including 0-days.</td></tr>
+      <tr><td><a href="https://github.com/trickest/cve" target="_blank">Trickest CVE Repo</a></td><td>CVEs with PoCs gathered from the Internet.</td></tr>
+      <tr><td><a href="https://www.cnvd.org.cn/" target="_blank">CNVD</a></td><td>Chinese National Vulnerability Database.</td></tr>
+      <tr><td><a href="https://inthewild.io/feed" target="_blank">InTheWild.io</a></td><td>CVEs actively exploited in the wild.</td></tr>
+      <tr><td><a href="https://www.vulnerability-lab.com/" target="_blank">Vulnerability Lab</a></td><td>Research, bug bounties, and assessments.</td></tr>
+      <tr><td><a href="https://access.redhat.com/security/security-updates/" target="_blank">Red Hat Security</a></td><td>Red Hat security advisories.</td></tr>
+      <tr><td><a href="https://sec.cloudapps.cisco.com/security/center/publicationListing.x" target="_blank">Cisco Advisories</a></td><td>Cisco product security advisories.</td></tr>
+      <tr><td><a href="https://msrc.microsoft.com/update-guide/en-us" target="_blank">MSRC</a></td><td>Microsoft vulnerability updates.</td></tr>
+      <tr><td><a href="https://www.variotdbs.pl/vulns/" target="_blank">VARIoT Vulns</a></td><td>IoT vulnerability database.</td></tr>
+      <tr><td><a href="https://lambdawatchdog.com/" target="_blank">Lambda Watchdog</a></td><td>CVE dashboard for AWS Lambda.</td></tr>
+      <tr><td><a href="https://cvefeed.io/" target="_blank">cvefeed.io</a></td><td>Up-to-date CVE and advisory feeds.</td></tr>
+      <tr><td><a href="https://cvecrowd.com/" target="_blank">CVE Crowd</a></td><td>Track actively discussed CVEs.</td></tr>
+      <tr><td><a href="https://www.wiz.io/vulnerability-database" target="_blank">Wiz Vuln DB</a></td><td>Cloud-focused vulnerability tracking.</td></tr>
+      <tr><td><a href="https://cvedb.shodan.io/" target="_blank">Shodan CVEDB</a></td><td>API for quick vulnerability lookups.</td></tr>
+      <tr><td><a href="https://vulert.com/vuln-db" target="_blank">Vulert</a></td><td>Recent issues in open-source packages.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- EXPLOITS -->
+<section id="exploits" data-category="Exploits">
+  <h2>💣 Exploits</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://www.exploit-db.com/" target="_blank">Exploit-DB</a></td><td>Community-driven exploit database.</td></tr>
+      <tr><td><a href="https://sploitus.com/" target="_blank">Sploitus</a></td><td>Aggregated exploit search engine.</td></tr>
+      <tr><td><a href="https://www.rapid7.com/db/" target="_blank">Rapid7 DB</a></td><td>Vulnerability and exploit database.</td></tr>
+      <tr><td><a href="https://vulmon.com/" target="_blank">Vulmon</a></td><td>Vulnerability and exploit search.</td></tr>
+      <tr><td><a href="https://packetstormsecurity.com/" target="_blank">Packet Storm</a></td><td>Security news, tools, exploits.</td></tr>
+      <tr><td><a href="https://0day.today/" target="_blank">0day.today</a></td><td>Exploit and vulnerability database.</td></tr>
+      <tr><td><a href="https://lolbas-project.github.io/" target="_blank">LOLBAS</a></td><td>Living-off-the-land binaries, scripts, libraries (Windows).</td></tr>
+      <tr><td><a href="https://gtfobins.github.io/" target="_blank">GTFOBins</a></td><td>Unix binaries for privilege escalation.</td></tr>
+      <tr><td><a href="https://swisskyrepo.github.io/PayloadsAllTheThings/" target="_blank">Payloads All The Things</a></td><td>Payloads and bypass techniques (web).</td></tr>
+      <tr><td><a href="http://www.xss-payloads.com/" target="_blank">XSS Payloads</a></td><td>XSS payload resources.</td></tr>
+      <tr><td><a href="https://www.exploitalert.com/search-results.html" target="_blank">ExploitAlert</a></td><td>Exploit database.</td></tr>
+      <tr><td><a href="https://www.revshells.com/" target="_blank">RevShells</a></td><td>Reverse shell generator.</td></tr>
+      <tr><td><a href="https://hackerone.com/hacktivity" target="_blank">HackerOne Hacktivity</a></td><td>Public bug bounty reports.</td></tr>
+      <tr><td><a href="https://bugcrowd.com/crowdstream" target="_blank">Bugcrowd Crowdstream</a></td><td>Accepted and disclosed submissions.</td></tr>
+      <tr><td><a href="https://gtfoargs.github.io/" target="_blank">GTFOArgs</a></td><td>Unix binaries argument injection techniques.</td></tr>
+      <tr><td><a href="https://shell-storm.org/shellcode/index.html" target="_blank">Shell-Storm Shellcode</a></td><td>Shellcode database.</td></tr>
+      <tr><td><a href="https://hackingthe.cloud/" target="_blank">Hacking the Cloud</a></td><td>Cloud attack encyclopedia.</td></tr>
+      <tr><td><a href="https://www.loldrivers.io/" target="_blank">LOLDrivers</a></td><td>Vulnerable and malicious Windows drivers.</td></tr>
+      <tr><td><a href="http://pwnwiki.io/" target="_blank">PwnWiki</a></td><td>Post-exploitation TTPs collection.</td></tr>
+      <tr><td><a href="https://cvexploits.io/" target="_blank">CVExploits</a></td><td>CVE exploit index.</td></tr>
+      <tr><td><a href="https://www.variotdbs.pl/exploits/" target="_blank">VARIoT Exploits</a></td><td>IoT exploits database.</td></tr>
+      <tr><td><a href="https://www.loobins.io/" target="_blank">LOOBins</a></td><td>Living off macOS binaries.</td></tr>
+      <tr><td><a href="https://ess.coalitioninc.com/" target="_blank">Coalition ESS</a></td><td>Exploit likelihood scoring model.</td></tr>
+      <tr><td><a href="https://wadcoms.github.io/" target="_blank">WADComs</a></td><td>Interactive cheat sheet for Windows/AD tools.</td></tr>
+      <tr><td><a href="https://lolapps-project.github.io/" target="_blank">LOLApps</a></td><td>Apps used for day-to-day exploitation.</td></tr>
+      <tr><td><a href="https://lothardware.com.tr/" target="_blank">Living off the Hardware</a></td><td>Malicious hardware/device tradecraft.</td></tr>
+      <tr><td><a href="https://boostsecurityio.github.io/lotp/" target="_blank">Living Off the Pipeline</a></td><td>CI/CD tool abuse to achieve code execution.</td></tr>
+      <tr><td><a href="https://hackyx.io/" target="_blank">hackyx.io</a></td><td>Index of security resources and reports.</td></tr>
+      <tr><td><a href="https://www.exploit.observer/" target="_blank">exploit.observer</a></td><td>Exploit and vulnerability intelligence.</td></tr>
+      <tr><td><a href="https://vulncheck.com/xdb/" target="_blank">VulnCheck XDB</a></td><td>Git-hosted exploit PoCs index.</td></tr>
+      <tr><td><a href="https://sploitify.haxx.it/" target="_blank">Sploitify</a></td><td>Interactive list of public server-side exploits.</td></tr>
+      <tr><td><a href="https://lolesxi-project.github.io/LOLESXi/" target="_blank">LOLESXi</a></td><td>Native binaries/scripts in VMware ESXi.</td></tr>
+      <tr><td><a href="https://lolad-project.github.io/" target="_blank">LOLAD</a></td><td>Active Directory native techniques and commands.</td></tr>
+      <tr><td><a href="https://0xanalyst.github.io/Project-Lost/" target="_blank">Project LOST</a></td><td>Security tools leveraged by adversaries.</td></tr>
+      <tr><td><a href="https://cspbypass.com/" target="_blank">CSPBypass.com</a></td><td>Content Security Policy bypasses.</td></tr>
+      <tr><td><a href="https://lottunnels.github.io/#" target="_blank">LOTTunnels</a></td><td>Abusable digital tunnels and use-cases.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ATTACK SURFACE -->
+<section id="attack-surface" data-category="Attack Surface">
+  <h2>🎯 Attack Surface</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://fullhunt.io/" target="_blank">FullHunt</a></td><td>Global attack surface database.</td></tr>
+      <tr><td><a href="https://www.binaryedge.io/" target="_blank">BinaryEdge</a></td><td>Internet scanning and exposure data.</td></tr>
+      <tr><td><a href="https://censys.io/" target="_blank">Censys ASM</a></td><td>Attack Surface Management platform.</td></tr>
+      <tr><td><a href="https://redhuntlabs.com/" target="_blank">RedHunt Labs</a></td><td>Continuous attack surface discovery.</td></tr>
+      <tr><td><a href="https://securitytrails.com/" target="_blank">SecurityTrails</a></td><td>Internet asset inventory.</td></tr>
+      <tr><td><a href="https://overcast-security.com/" target="_blank">Overcast Security</a></td><td>External attack surface monitoring.</td></tr>
+      <tr><td><a href="https://ipinfo.io/" target="_blank">IPinfo</a></td><td>IP geolocation and metadata.</td></tr>
+      <tr><td><a href="https://ipdata.co/" target="_blank">IPData</a></td><td>IP geolocation and threat intel API.</td></tr>
+      <tr><td><a href="https://networksdb.io/" target="_blank">NetworksDB</a></td><td>Company-owned IPs, networks, and domains.</td></tr>
+      <tr><td><a href="https://asnlookup.com/" target="_blank">ASNlookup</a></td><td>Quick ASN, org, and prefix lookup.</td></tr>
+      <tr><td><a href="https://bgp.tools/" target="_blank">BGP.tools</a></td><td>Browse BGP and Internet ecosystem data.</td></tr>
+      <tr><td><a href="https://bgpview.io/" target="_blank">BGPView</a></td><td>IP, ASN, IXs, ISPs, and BGP data.</td></tr>
+      <tr><td><a href="https://www.bigdatacloud.com/" target="_blank">BigDataCloud</a></td><td>Network and location APIs.</td></tr>
+      <tr><td><a href="https://www.radb.net/query" target="_blank">RADb</a></td><td>Public routing registry.</td></tr>
+      <tr><td><a href="https://www.deepinfo.com/" target="_blank">Deepinfo</a></td><td>Aggregated Internet exposure data.</td></tr>
+      <tr><td><a href="https://radar.cloudflare.com/" target="_blank">Cloudflare Radar</a></td><td>Global Internet and attack trends.</td></tr>
+      <tr><td><a href="https://en.ipip.net/" target="_blank">IPIP</a></td><td>IP database with real-time BGP/ASN data.</td></tr>
+      <tr><td><a href="https://bgp.he.net/" target="_blank">Hurricane Electric BGP</a></td><td>BGP toolkit and ASN lookups.</td></tr>
+      <tr><td><a href="https://webscout.io/" target="_blank">Webscout</a></td><td>Attack surface discovery and brand protection.</td></tr>
+      <tr><td><a href="https://awseye.com/" target="_blank">Awseye</a></td><td>OSINT tracking of public AWS data.</td></tr>
+      <tr><td><a href="https://app.s4e.io/" target="_blank">S4E</a></td><td>CTEM platform for scanning/monitoring assets.</td></tr>
+      <tr><td><a href="https://ipquery.io/" target="_blank">ipquery.io</a></td><td>IP address API for developers.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- CODE -->
+<section id="code" data-category="Code">
+  <h2>💻 Code</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://github.com/search?type=code" target="_blank">GitHub Code Search</a></td><td>Global code search across GitHub.</td></tr>
+      <tr><td><a href="https://gitlab.com/" target="_blank">GitLab</a></td><td>Code hosting with advanced search.</td></tr>
+      <tr><td><a href="https://sourceforge.net/" target="_blank">SourceForge</a></td><td>Open-source software platform.</td></tr>
+      <tr><td><a href="https://grep.app/" target="_blank">grep.app</a></td><td>Search across many public git repos.</td></tr>
+      <tr><td><a href="https://publicwww.com/" target="_blank">publicwww</a></td><td>Search HTML/JS/CSS source online.</td></tr>
+      <tr><td><a href="https://searchcode.com/" target="_blank">SearchCode</a></td><td>Code search across many projects.</td></tr>
+      <tr><td><a href="https://www.nerdydata.com/" target="_blank">NerdyData</a></td><td>Search websites by code and tech stack.</td></tr>
+      <tr><td><a href="http://codefinder.org/" target="_blank">RepoSearch</a></td><td>Source code search engine.</td></tr>
+      <tr><td><a href="https://about.sourcegraph.com/" target="_blank">Sourcegraph</a></td><td>Understand and search codebases.</td></tr>
+      <tr><td><a href="https://hotexamples.com/" target="_blank">HotExamples</a></td><td>Code examples from many projects.</td></tr>
+      <tr><td><a href="https://wpdirectory.net/" target="_blank">WPDirectory</a></td><td>Regex search of WP plugins/themes.</td></tr>
+      <tr><td><a href="https://gist.github.com/discover" target="_blank">GitHub Gist Discover</a></td><td>Discover public gists/snippets.</td></tr>
+      <tr><td><a href="https://codeberg.org/explore/repos" target="_blank">Codeberg</a></td><td>FOSS git hosting and projects.</td></tr>
+      <tr><td><a href="https://pagure.io/browse/projects/" target="_blank">Pagure</a></td><td>Fedora's code hosting platform.</td></tr>
+      <tr><td><a href="https://launchpad.net/" target="_blank">Launchpad</a></td><td>Bug tracking, code hosting, Ubuntu packages.</td></tr>
+      <tr><td><a href="https://repo.or.cz/?a=project_list" target="_blank">repo.or.cz</a></td><td>Public git hosting.</td></tr>
+      <tr><td><a href="https://gitorious.org/" target="_blank">gitorious.org (mirror)</a></td><td>Read-only archive of old Gitorious.</td></tr>
+      <tr><td><a href="https://sr.ht/projects" target="_blank">SourceHut</a></td><td>Lightweight dev tools and hosting.</td></tr>
+      <tr><td><a href="https://android.googlesource.com/" target="_blank">Android.googlesource.com</a></td><td>Android git repos.</td></tr>
+      <tr><td><a href="https://deps.dev/" target="_blank">deps.dev</a></td><td>Package dependency metadata (by Google).</td></tr>
+      <tr><td><a href="https://webfinery.com/search" target="_blank">WebFinery</a></td><td>Search the source code of the web.</td></tr>
+      <tr><td><a href="https://code.google.com/archive/" target="_blank">Google Code Archive</a></td><td>Archived Google Code projects.</td></tr>
+      <tr><td><a href="https://snipplr.com/all" target="_blank">Snipplr</a></td><td>Code snippet search and share.</td></tr>
+      <tr><td><a href="https://www.postman.com/explore/collections" target="_blank">Postman Public Collections</a></td><td>Public API collections and workspaces.</td></tr>
+      <tr><td><a href="https://scriptmafia.org/" target="_blank">ScriptMafia</a></td><td>Nulled scripts site (use caution).</td></tr>
+      <tr><td><a href="https://www.searchftps.net/" target="_blank">SearchFTPs</a></td><td>FTP search engine.</td></tr>
+      <tr><td><a href="https://ecosyste.ms/" target="_blank">Ecosyste.ms</a></td><td>Open API for package and dependency data.</td></tr>
+      <tr><td><a href="https://app.swaggerhub.com/search" target="_blank">SwaggerHub Search</a></td><td>Search public APIs and domains.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- EMAIL ADDRESSES -->
+<section id="email-addresses" data-category="Email Addresses">
+  <h2>📧 Email Addresses</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://hunter.io/" target="_blank">Hunter.io</a></td><td>Find professional emails by domain.</td></tr>
+      <tr><td><a href="https://phonebook.cz/" target="_blank">Phonebook.cz</a></td><td>Index of domains, emails, and URLs.</td></tr>
+      <tr><td><a href="https://intelx.io/" target="_blank">Intelligence X</a></td><td>Data archive and search engine.</td></tr>
+      <tr><td><a href="https://reacher.email/" target="_blank">Reacher</a></td><td>Open-source email verification.</td></tr>
+      <tr><td><a href="https://rocketreach.co/" target="_blank">RocketReach</a></td><td>Contact discovery for professionals.</td></tr>
+      <tr><td><a href="https://www.email-format.com/" target="_blank">email-format.com</a></td><td>Common email formats by company.</td></tr>
+      <tr><td><a href="https://tools.emailhippo.com/" target="_blank">Email Hippo</a></td><td>Email verification tools.</td></tr>
+      <tr><td><a href="https://thatsthem.com/reverse-email-lookup" target="_blank">That'sThem Email</a></td><td>Reverse email lookup.</td></tr>
+      <tr><td><a href="https://verify-email.org/" target="_blank">verify-email.org</a></td><td>Mailbox existence check.</td></tr>
+      <tr><td><a href="https://www.melissa.com/v2/lookups/emailcheck/email/" target="_blank">Melissa Emailcheck</a></td><td>Email verification.</td></tr>
+      <tr><td><a href="https://www.voilanorbert.com/" target="_blank">VoilaNorbert</a></td><td>Email finder tool.</td></tr>
+      <tr><td><a href="https://synapsint.com/" target="_blank">SynapsInt</a></td><td>Unified OSINT research tool.</td></tr>
+      <tr><td><a href="http://www.skymem.info/" target="_blank">Skymem</a></td><td>Find company and people emails.</td></tr>
+      <tr><td><a href="https://www.findemails.com/" target="_blank">FindEmails</a></td><td>Find verified emails.</td></tr>
+      <tr><td><a href="https://www.experte.com/email-finder" target="_blank">Experte Email Finder</a></td><td>Find emails by name and company.</td></tr>
+      <tr><td><a href="https://www.emailsherlock.com/" target="_blank">EmailSherlock</a></td><td>Reverse email lookup and reputation.</td></tr>
+      <tr><td><a href="https://anymailfinder.com/" target="_blank">Anymail Finder</a></td><td>Verified emails finder.</td></tr>
+      <tr><td><a href="https://tomba.io/" target="_blank">Tomba.io</a></td><td>Email finder with deliverability checks.</td></tr>
+      <tr><td><a href="https://snov.io/email-finder" target="_blank">Snov Email Finder</a></td><td>Find emails anywhere on the web.</td></tr>
+      <tr><td><a href="https://emailsearch.io/" target="_blank">EmailSearch.io</a></td><td>Find emails/phones by domain, name, LinkedIn.</td></tr>
+      <tr><td><a href="http://metricsparrow.com/toolkit/email-permutator/#" target="_blank">Email Permutator+</a></td><td>Generate possible email permutations.</td></tr>
+      <tr><td><a href="https://emailrep.io/" target="_blank">EmailRep</a></td><td>Email reputation API.</td></tr>
+      <tr><td><a href="https://www.mailboxvalidator.com/" target="_blank">MailboxValidator</a></td><td>Email validation service.</td></tr>
+      <tr><td><a href="https://contactout.com/" target="_blank">ContactOut</a></td><td>Personal and work email finder.</td></tr>
+      <tr><td><a href="https://validemail.io/" target="_blank">validemail.io</a></td><td>Deliverability validation API.</td></tr>
+      <tr><td><a href="https://www.predictasearch.com/" target="_blank">Predicta Search</a></td><td>Reverse lookup by email/phone.</td></tr>
+      <tr><td><a href="https://www.infoga.io/" target="_blank">Infoga</a></td><td>Domain email discovery via OSINT.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- DOMAINS -->
+<section id="domains" data-category="Domains">
+  <h2>🌍 Domains</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://phonebook.cz/" target="_blank">Phonebook.cz</a></td><td>Index of domains, emails, URLs.</td></tr>
+      <tr><td><a href="https://intelx.io/" target="_blank">Intelligence X</a></td><td>Data archive and search engine.</td></tr>
+      <tr><td><a href="https://omnisint.io/subdomain-enumeration" target="_blank">Omnisint Subdomains</a></td><td>Subdomain enumeration.</td></tr>
+      <tr><td><a href="https://riddler.io/" target="_blank">Riddler</a></td><td>Domain and subdomain dataset search.</td></tr>
+      <tr><td><a href="https://www.robtex.com/" target="_blank">Robtex</a></td><td>IPs, domains, routes intelligence.</td></tr>
+      <tr><td><a href="https://centralops.net/co/DomainDossier.aspx" target="_blank">DomainDossier</a></td><td>Investigate domains and IPs.</td></tr>
+      <tr><td><a href="https://www.domainiq.com/" target="_blank">DomainIQ</a></td><td>Domain ownership intelligence.</td></tr>
+      <tr><td><a href="https://whois.domaintools.com/" target="_blank">DomainTools WHOIS</a></td><td>WHOIS and domain intelligence.</td></tr>
+      <tr><td><a href="https://shorteners.grayhatwarfare.com/domains" target="_blank">Grayhat Shorteners/URLs</a></td><td>Search URL shortener exposures.</td></tr>
+      <tr><td><a href="https://whoisology.com/" target="_blank">Whoisology</a></td><td>Link domains by WHOIS pivots.</td></tr>
+      <tr><td><a href="https://who.is/" target="_blank">Who.is</a></td><td>WHOIS and website tools.</td></tr>
+      <tr><td><a href="https://pentest-tools.com/information-gathering/find-subdomains-of-domain" target="_blank">Pentest-Tools Subdomains</a></td><td>Subdomain discovery.</td></tr>
+      <tr><td><a href="https://builtwith.com/" target="_blank">BuiltWith</a></td><td>Tech stack analysis.</td></tr>
+      <tr><td><a href="http://moonsearch.com/" target="_blank">MoonSearch</a></td><td>Backlink checker and SEO.</td></tr>
+      <tr><td><a href="https://sitereport.netcraft.com/" target="_blank">Netcraft Site Report</a></td><td>Site infrastructure and tech.</td></tr>
+      <tr><td><a href="https://synapsint.com/" target="_blank">SynapsInt</a></td><td>Unified OSINT research tool.</td></tr>
+      <tr><td><a href="https://www.statscrop.com/" target="_blank">StatsCrop</a></td><td>Website analytics/meta.</td></tr>
+      <tr><td><a href="https://securityheaders.com/" target="_blank">SecurityHeaders</a></td><td>Scan HTTP security headers.</td></tr>
+      <tr><td><a href="http://www.visualsitemapper.com/" target="_blank">Visual Site Mapper</a></td><td>Visual map of website structure.</td></tr>
+      <tr><td><a href="https://www.similarweb.com/" target="_blank">Similarweb</a></td><td>Site traffic and analytics.</td></tr>
+      <tr><td><a href="https://buckets.grayhatwarfare.com/" target="_blank">Grayhat Buckets</a></td><td>Public buckets index.</td></tr>
+      <tr><td><a href="https://api.c99.nl/" target="_blank">C99.nl</a></td><td>Multi-purpose OSINT APIs.</td></tr>
+      <tr><td><a href="https://wannabe1337.xyz/" target="_blank">wannabe1337 Tools</a></td><td>Online OSINT/infosec tools.</td></tr>
+      <tr><td><a href="https://subdomainfinder.c99.nl/" target="_blank">C99 Subdomain Finder</a></td><td>Domain-wide subdomain scan.</td></tr>
+      <tr><td><a href="https://jonlu.ca/anubis/" target="_blank">AnubisDB</a></td><td>Subdomain enumeration tool.</td></tr>
+      <tr><td><a href="https://hypestat.com/" target="_blank">HypeStat</a></td><td>Website statistics and info.</td></tr>
+      <tr><td><a href="https://www.pkey.in/tools-i/search-subdomains" target="_blank">Private Key Project Tools</a></td><td>Security tools (subdomain search).</td></tr>
+      <tr><td><a href="http://www.sitedossier.com/" target="_blank">SiteDossier</a></td><td>Profiles for millions of sites.</td></tr>
+      <tr><td><a href="https://spyonweb.net/" target="_blank">SpyOnWeb</a></td><td>Find sites sharing same IDs.</td></tr>
+      <tr><td><a href="https://www.haveibeensquatted.com/" target="_blank">HaveIBeenSquatted</a></td><td>Typosquatting check.</td></tr>
+      <tr><td><a href="https://www.expireddomains.net/" target="_blank">ExpiredDomains.net</a></td><td>Expired/backorderable domains.</td></tr>
+      <tr><td><a href="https://subdomainradar.io/" target="_blank">SubDomainRadar</a></td><td>High-accuracy subdomain discovery.</td></tr>
+      <tr><td><a href="https://transparencyreport.google.com/safe-browsing/search" target="_blank">Google Safe Browsing</a></td><td>Safety status of sites.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- URLs -->
+<section id="urls" data-category="URLs">
+  <h2>🔗 URLs</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://phonebook.cz/" target="_blank">Phonebook.cz</a></td><td>Index of domains, emails, URLs.</td></tr>
+      <tr><td><a href="https://intelx.io/" target="_blank">Intelligence X</a></td><td>Data archive and search engine.</td></tr>
+      <tr><td><a href="https://urlscan.io/" target="_blank">urlscan.io</a></td><td>Web sandbox and URL analysis.</td></tr>
+      <tr><td><a href="https://hackertarget.com/ip-tools/" target="_blank">HackerTarget</a></td><td>IP/DNS/HTTP toolset.</td></tr>
+      <tr><td><a href="https://moz.com/link-explorer" target="_blank">Moz Link Explorer</a></td><td>Backlink analysis.</td></tr>
+      <tr><td><a href="https://shorteners.grayhatwarfare.com/" target="_blank">Grayhat Shorteners</a></td><td>Exposed URL shortener links.</td></tr>
+      <tr><td><a href="http://index.commoncrawl.org/" target="_blank">CommonCrawl Index</a></td><td>Web crawl index.</td></tr>
+      <tr><td><a href="https://www.urlvoid.com/" target="_blank">URLVoid</a></td><td>URL reputation checker.</td></tr>
+      <tr><td><a href="https://safeweb.norton.com/" target="_blank">Norton Safe Web</a></td><td>Site safety ratings.</td></tr>
+      <tr><td><a href="https://checkphish.bolster.ai/" target="_blank">CheckPhish</a></td><td>Real-time URL scanner.</td></tr>
+      <tr><td><a href="https://web-check.xyz/" target="_blank">web-check</a></td><td>One-stop OSINT for websites.</td></tr>
+      <tr><td><a href="https://www.tiny-scan.com/" target="_blank">TinyScan</a></td><td>URL detail inspection.</td></tr>
+      <tr><td><a href="https://urldna.io/" target="_blank">urldna.io</a></td><td>Website insights and risk exposure.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- DNS -->
+<section id="dns" data-category="DNS">
+  <h2>🌐 DNS</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://dnsdumpster.com/" target="_blank">DNSDumpster</a></td><td>DNS recon and mapping.</td></tr>
+      <tr><td><a href="https://chaos.projectdiscovery.io/#/" target="_blank">ProjectDiscovery Chaos</a></td><td>Community DNS data for bug bounty targets.</td></tr>
+      <tr><td><a href="https://rapiddns.io/" target="_blank">RapidDNS</a></td><td>Query subdomains and reverse IP.</td></tr>
+      <tr><td><a href="https://docs.farsightsecurity.com/#dnsdb" target="_blank">DNSDB</a></td><td>Passive DNS history (Farsight).</td></tr>
+      <tr><td><a href="https://omnisint.io/reverse-dns-lookup" target="_blank">Omnisint Reverse DNS</a></td><td>Reverse DNS lookup.</td></tr>
+      <tr><td><a href="https://hackertarget.com/ip-tools/" target="_blank">HackerTarget</a></td><td>DNS/Network tools.</td></tr>
+      <tr><td><a href="https://passivedns.mnemonic.no/" target="_blank">Mnemonic PassiveDNS</a></td><td>Passive DNS lookups.</td></tr>
+      <tr><td><a href="http://ptrarchive.com/" target="_blank">PTRArchive</a></td><td>Massive reverse DNS archive.</td></tr>
+      <tr><td><a href="http://dnshistory.org/" target="_blank">DNSHistory</a></td><td>DNS historical records.</td></tr>
+      <tr><td><a href="https://dnstwister.report/" target="_blank">DNSTwister</a></td><td>Phishing/typosquat domain generator.</td></tr>
+      <tr><td><a href="https://dnsviz.net/" target="_blank">DNSViz</a></td><td>DNSSEC visualization and analysis.</td></tr>
+      <tr><td><a href="https://api.c99.nl/" target="_blank">C99.nl</a></td><td>OSINT API suite.</td></tr>
+      <tr><td><a href="https://wannabe1337.xyz/" target="_blank">wannabe1337 Tools</a></td><td>Online OSINT tools.</td></tr>
+      <tr><td><a href="https://dnslytics.com/" target="_blank">DNSlytics</a></td><td>Domain/IP/provider intelligence.</td></tr>
+      <tr><td><a href="https://dnsrepo.noc.org/" target="_blank">dnsrepo.noc.org</a></td><td>DNS repository search.</td></tr>
+      <tr><td><a href="https://dnsspy.io/" target="_blank">DNSSpy</a></td><td>DNS monitoring and validation.</td></tr>
+      <tr><td><a href="https://zetalytics.com/" target="_blank">ZETAlytics</a></td><td>Global passive DNS datasets.</td></tr>
+      <tr><td><a href="https://askdns.com/" target="_blank">AskDNS</a></td><td>Connected domains and IPs.</td></tr>
+      <tr><td><a href="https://passivedns.cn/" target="_blank">360 PassiveDNS</a></td><td>Passive DNS in China.</td></tr>
+      <tr><td><a href="https://mxtoolbox.com/SuperTool.aspx" target="_blank">MXToolbox SuperTool</a></td><td>DNS, MX, blacklist lookups.</td></tr>
+      <tr><td><a href="https://www.nslookup.io/" target="_blank">NSLookup.io</a></td><td>DNS record lookups.</td></tr>
+      <tr><td><a href="https://www.robtex.com/dns-lookup/" target="_blank">Robtex DNS Lookup</a></td><td>Nameserver and DNS detail.</td></tr>
+      <tr><td><a href="https://dnsmap.io/" target="_blank">DNSMap</a></td><td>Worldwide DNS propagation.</td></tr>
+      <tr><td><a href="https://app.validin.com/" target="_blank">Validin</a></td><td>Free DNS history search.</td></tr>
+      <tr><td><a href="https://dnslookup.pro/" target="_blank">dnslookup.pro</a></td><td>Advanced DNS record analysis.</td></tr>
+      <tr><td><a href="https://viewdns.info/" target="_blank">ViewDNS.info</a></td><td>25+ DNS/network tools.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" data-category="Certificates">
+  <h2>🔐 Certificates</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://crt.sh/" target="_blank">crt.sh</a></td><td>Certificate Transparency search.</td></tr>
+      <tr><td><a href="https://ui.ctsearch.entrust.com/ui/ctsearchui" target="_blank">CTSearch (Entrust)</a></td><td>CT log search.</td></tr>
+      <tr><td><a href="https://tls.bufferover.run/" target="_blank">tls.bufferover.run</a></td><td>Find certificates in IPv4 space.</td></tr>
+      <tr><td><a href="https://sslmate.com/certspotter/" target="_blank">CertSpotter</a></td><td>Monitor issued/expiring/invalid certs.</td></tr>
+      <tr><td><a href="https://synapsint.com/" target="_blank">SynapsInt</a></td><td>Unified OSINT research tool.</td></tr>
+      <tr><td><a href="https://search.censys.io/#" target="_blank">Censys Certificates</a></td><td>Certificates indexed by Censys.</td></tr>
+      <tr><td><a href="https://ciphersuite.info/" target="_blank">ciphersuite.info</a></td><td>TLS cipher suite reference.</td></tr>
+      <tr><td><a href="https://certificatedetails.com/" target="_blank">CertificateDetails</a></td><td>View and download certs online.</td></tr>
+      <tr><td><a href="https://developers.facebook.com/tools/ct/search/" target="_blank">Facebook CT Search</a></td><td>CT search with alerts.</td></tr>
+      <tr><td><a href="https://certs.io/" target="_blank">certs.io</a></td><td>TLS certificate search.</td></tr>
+      <tr><td><a href="https://getodin.com/search/certificates" target="_blank">ODIN Certificate Search</a></td><td>Cert search via ODIN.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- WIFI NETWORKS -->
+<section id="wifi-networks" data-category="WiFi Networks">
+  <h2>📶 WiFi Networks</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://wigle.net/" target="_blank">Wigle</a></td><td>Maps and database of Wi-Fi networks.</td></tr>
+      <tr><td><a href="https://www.wifimap.io/" target="_blank">WiFi Map</a></td><td>Global hotspot map/app.</td></tr>
+      <tr><td><a href="http://www.wificafespots.com/" target="_blank">WiFi Cafe Spots</a></td><td>Free WiFi locations.</td></tr>
+      <tr><td><a href="https://wifispc.com/" target="_blank">WiFiSPC</a></td><td>Wi-Fi passwords map.</td></tr>
+      <tr><td><a href="https://openwifimap.net/" target="_blank">OpenWiFiMap</a></td><td>Community Wi-Fi mapping.</td></tr>
+      <tr><td><a href="https://www.mylnikov.org/" target="_blank">Mylnikov</a></td><td>Wi-Fi geolocation API.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- DEVICE INFORMATION -->
+<section id="device-information" data-category="Device Information">
+  <h2>📱 Device Information</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://www.macvendorlookup.com/" target="_blank">MACVendorLookup</a></td><td>MAC to vendor lookup.</td></tr>
+      <tr><td><a href="https://macvendors.com/" target="_blank">Macvendors.com</a></td><td>MAC vendor lookup.</td></tr>
+      <tr><td><a href="https://macaddress.io/" target="_blank">macaddress.io</a></td><td>OUI/MAC vendor lookup.</td></tr>
+      <tr><td><a href="https://maclookup.app/" target="_blank">maclookup.app</a></td><td>MAC vendor by OUI/MAC.</td></tr>
+      <tr><td><a href="https://macvendors.co/" target="_blank">macvendors.co</a></td><td>MAC vendor lookup.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- CREDENTIALS -->
+<section id="credentials" data-category="Credentials">
+  <h2>🔑 Credentials</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://haveibeenpwned.com/" target="_blank">Have I Been Pwned</a></td><td>Check for breached email/phone.</td></tr>
+      <tr><td><a href="https://www.dehashed.com/" target="_blank">DeHashed</a></td><td>Credential leaks search (deep web).</td></tr>
+      <tr><td><a href="https://leakcheck.io/" target="_blank">LeakCheck.io</a></td><td>Check if credentials were leaked.</td></tr>
+      <tr><td><a href="https://crackstation.net/" target="_blank">CrackStation</a></td><td>Hash cracking lookup tables.</td></tr>
+      <tr><td><a href="https://hashkiller.io/listmanager" target="_blank">HashKiller</a></td><td>Pre-cracked hash database.</td></tr>
+      <tr><td><a href="https://leakedpassword.com/" target="_blank">LeakedPassword</a></td><td>Search multiple breach datasets.</td></tr>
+      <tr><td><a href="https://bugmenot.com/" target="_blank">BugMeNot</a></td><td>Shared logins for websites.</td></tr>
+      <tr><td><a href="https://hashes.com/en/decrypt/hash" target="_blank">Hashes.com</a></td><td>Online hash cracking/decryption.</td></tr>
+      <tr><td><a href="https://hashmob.net/search" target="_blank">Hashmob</a></td><td>Password recovery community.</td></tr>
+      <tr><td><a href="https://whiteintel.io/" target="_blank">WhiteIntel</a></td><td>Check company exposure to info-stealers.</td></tr>
+      <tr><td><a href="https://ntlm.pw/" target="_blank">ntlm.pw</a></td><td>NTLM hash lookups.</td></tr>
+      <tr><td><a href="https://www.hudsonrock.com/threat-intelligence-cybercrime-tools" target="_blank">Hudson Rock Tools</a></td><td>Free cybercrime intel tools.</td></tr>
+      <tr><td><a href="https://hackedlist.io/" target="_blank">HackedList.io</a></td><td>Domain-based credential compromise check.</td></tr>
+      <tr><td><a href="https://haveibeensold.app/" target="_blank">HaveIBeenSold</a></td><td>Check if your email was sold.</td></tr>
+      <tr><td><a href="https://leak.sx/" target="_blank">Leak.sx</a></td><td>Leaked accounts index.</td></tr>
+      <tr><td><a href="https://scatteredsecrets.com/" target="_blank">Scattered Secrets</a></td><td>Check if your password leaked.</td></tr>
+      <tr><td><a href="https://infostealers.info/" target="_blank">InfoStealers.info</a></td><td>Insights from infostealer logs.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- LEAKS -->
+<section id="leaks" data-category="Leaks">
+  <h2>💧 Leaks</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://wikileaks.org/" target="_blank">WikiLeaks</a></td><td>Leaks from anonymous sources.</td></tr>
+      <tr><td><a href="https://leak-lookup.com/" target="_blank">Leak-Lookup</a></td><td>Search across breach datasets.</td></tr>
+      <tr><td><a href="https://snusbase.com/" target="_blank">Snusbase</a></td><td>Database breach search.</td></tr>
+      <tr><td><a href="https://weleakinfo.io/" target="_blank">WeLeakInfo</a></td><td>Dehashed breached databases.</td></tr>
+      <tr><td><a href="https://breachdirectory.org/" target="_blank">BreachDirectory</a></td><td>Check if data exposed in breaches.</td></tr>
+      <tr><td><a href="https://breachforums.st/" target="_blank">BreachForums</a></td><td>Leaks and breach discussions (use caution).</td></tr>
+      <tr><td><a href="http://siphondkh34l5vki.onion/" target="_blank">Siph0n Breach DB (onion)</a></td><td>Breaches/exploits (Tor required).</td></tr>
+      <tr><td><a href="https://exposed.vc/" target="_blank">Exposed.vc</a></td><td>Databreach discussions & leaks.</td></tr>
+      <tr><td><a href="https://ddosecrets.com/" target="_blank">DDoSecrets</a></td><td>Non-profit publishing/archiving leaks.</td></tr>
+      <tr><td><a href="https://haveibeenzuckered.com/" target="_blank">Have I Been Zuckered</a></td><td>Facebook breach checker.</td></tr>
+      <tr><td><a href="https://cryptome.org/" target="_blank">Cryptome</a></td><td>Government-prohibited publications.</td></tr>
+      <tr><td><a href="https://leakpeek.com/" target="_blank">LeakPeek</a></td><td>Public leak search by email/username.</td></tr>
+      <tr><td><a href="https://breachcheck.io/" target="_blank">BreachCheck.io</a></td><td>Lookup and download exposed personal data.</td></tr>
+      <tr><td><a href="https://data.occrp.org/" target="_blank">OCCRP Aleph</a></td><td>Investigative research archive.</td></tr>
+      <tr><td><a href="https://leakradar.io/" target="_blank">LeakRadar</a></td><td>Public infostealer logs lookups.</td></tr>
+      <tr><td><a href="https://offshoreleaks.icij.org/" target="_blank">Offshore Leaks</a></td><td>Offshore companies and trusts.</td></tr>
+      <tr><td><a href="https://venacus.com/" target="_blank">Venacus</a></td><td>Search breaches and leaked docs.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- HIDDEN SERVICES -->
+<section id="hidden-services" data-category="Hidden Services">
+  <h2>🕵️ Hidden Services</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://ahmia.fi/" target="_blank">Ahmia</a></td><td>Search engine for Tor hidden services.</td></tr>
+      <tr><td><a href="https://thehiddenwiki.org/" target="_blank">Hidden Wiki</a></td><td>Dark web link directory.</td></tr>
+      <tr><td><a href="https://tor.link/" target="_blank">tor.link</a></td><td>Deepweb/Darknet search engine.</td></tr>
+      <tr><td><a href="https://deepweblinks.net/" target="_blank">deepweblinks.net</a></td><td>Onion links directory.</td></tr>
+      <tr><td><a href="https://onionengine.com/" target="_blank">OnionEngine</a></td><td>Tor services search engine.</td></tr>
+      <tr><td><a href="https://onionlandsearchengine.net/" target="_blank">OnionLand</a></td><td>Discover Tor hidden services.</td></tr>
+      <tr><td><a href="https://darkwebdaily.live/" target="_blank">DarkWebDaily</a></td><td>Darknet navigation resource.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SOCIAL NETWORKS -->
+<section id="social-networks" data-category="Social Networks">
+  <h2>📱 Social Networks</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://www.facebook.com/" target="_blank">Facebook</a></td><td>Social network.</td></tr>
+      <tr><td><a href="https://www.instagram.com/" target="_blank">Instagram</a></td><td>Photos and video sharing.</td></tr>
+      <tr><td><a href="https://www.youtube.com/" target="_blank">YouTube</a></td><td>Video platform.</td></tr>
+      <tr><td><a href="https://twitter.com/" target="_blank">Twitter/X</a></td><td>Microblogging platform.</td></tr>
+      <tr><td><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></td><td>Professional networking.</td></tr>
+      <tr><td><a href="https://new.reddit.com/" target="_blank">Reddit</a></td><td>Communities and discussions.</td></tr>
+      <tr><td><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></td><td>Visual discovery.</td></tr>
+      <tr><td><a href="https://www.tumblr.com/" target="_blank">Tumblr</a></td><td>Blogging platform.</td></tr>
+      <tr><td><a href="https://www.flickr.com/" target="_blank">Flickr</a></td><td>Photo sharing.</td></tr>
+      <tr><td><a href="https://www.snapchat.com/" target="_blank">Snapchat</a></td><td>Messaging and stories.</td></tr>
+      <tr><td><a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a></td><td>Messaging app.</td></tr>
+      <tr><td><a href="https://www.quora.com/" target="_blank">Quora</a></td><td>Q&A platform.</td></tr>
+      <tr><td><a href="https://www.tiktok.com/" target="_blank">TikTok</a></td><td>Short-form video.</td></tr>
+      <tr><td><a href="https://vimeo.com/" target="_blank">Vimeo</a></td><td>Video platform.</td></tr>
+      <tr><td><a href="https://medium.com/" target="_blank">Medium</a></td><td>Writing and blogs.</td></tr>
+      <tr><td><a href="https://www.wechat.com/" target="_blank">WeChat</a></td><td>Chinese messaging app.</td></tr>
+      <tr><td><a href="https://vk.com/" target="_blank">VK</a></td><td>Russian social network.</td></tr>
+      <tr><td><a href="https://weibo.com/" target="_blank">Weibo</a></td><td>Chinese microblogging platform.</td></tr>
+      <tr><td><a href="https://tinder.com/" target="_blank">Tinder</a></td><td>Dating app.</td></tr>
+      <tr><td><a href="https://www.threads.net/" target="_blank">Threads</a></td><td>Instagram's text posts app.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- PHONE NUMBERS -->
+<section id="phone-numbers" data-category="Phone Numbers">
+  <h2>📞 Phone Numbers</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://www.numlookup.com/" target="_blank">NumLookup</a></td><td>Free reverse phone lookup.</td></tr>
+      <tr><td><a href="https://spydialer.com/" target="_blank">SpyDialer</a></td><td>Reverse lookup search.</td></tr>
+      <tr><td><a href="https://www.whitepages.com/" target="_blank">WhitePages</a></td><td>People search and contacts.</td></tr>
+      <tr><td><a href="https://www.nationalcellulardirectory.com/" target="_blank">National Cellular Directory</a></td><td>People search.</td></tr>
+      <tr><td><a href="https://www.phonevalidator.com/" target="_blank">Phone Validator</a></td><td>Validate line type and status.</td></tr>
+      <tr><td><a href="https://freecarrierlookup.com/" target="_blank">Free Carrier Lookup</a></td><td>Carrier details by phone number.</td></tr>
+      <tr><td><a href="https://rocketreach.co/" target="_blank">RocketReach</a></td><td>Professional contacts.</td></tr>
+      <tr><td><a href="https://sync.me/" target="_blank">Sync.me</a></td><td>Identify callers (reverse lookup).</td></tr>
+      <tr><td><a href="https://www.emobiletracker.com/" target="_blank">EmobileTracker</a></td><td>Owner name/location from number.</td></tr>
+      <tr><td><a href="https://www.reversephonelookup.com/" target="_blank">ReversePhoneLookup.com</a></td><td>Reverse lookup.</td></tr>
+      <tr><td><a href="https://thatsthem.com/reverse-phone-lookup" target="_blank">That'sThem Phone</a></td><td>Reverse phone lookup.</td></tr>
+      <tr><td><a href="https://www.thisnumber.com/" target="_blank">ThisNumber</a></td><td>International phone directories.</td></tr>
+      <tr><td><a href="https://www.usphonebook.com/" target="_blank">USPhonebook</a></td><td>Reverse phone lookup (US).</td></tr>
+      <tr><td><a href="https://www.truepeoplesearch.com/#" target="_blank">TruePeopleSearch</a></td><td>People search with phone/email.</td></tr>
+      <tr><td><a href="https://www.tellows.com/" target="_blank">Tellows</a></td><td>Crowd-sourced caller ID.</td></tr>
+      <tr><td><a href="https://synapsint.com/" target="_blank">SynapsInt</a></td><td>Unified OSINT research tool.</td></tr>
+      <tr><td><a href="https://api.c99.nl/" target="_blank">C99.nl</a></td><td>OSINT API suite.</td></tr>
+      <tr><td><a href="https://validnumber.com/" target="_blank">ValidNumber</a></td><td>Reverse phone lookup (US/CA).</td></tr>
+      <tr><td><a href="https://cellidfinder.com/" target="_blank">CellIDFinder</a></td><td>Find GSM base stations.</td></tr>
+      <tr><td><a href="http://www.oldphonebook.com/" target="_blank">OldPhoneBook</a></td><td>Historical US phone listings.</td></tr>
+      <tr><td><a href="https://www.spokeo.com/" target="_blank">Spokeo</a></td><td>Reverse lookup and public records.</td></tr>
+      <tr><td><a href="https://www.intelius.com/reverse-phone-lookup/" target="_blank">Intelius Phone</a></td><td>Reverse phone owner details.</td></tr>
+      <tr><td><a href="https://www.zabasearch.com/reverse-phone-lookup/" target="_blank">ZabaSearch Phone</a></td><td>Reverse phone to personal info.</td></tr>
+      <tr><td><a href="https://www.anywho.com/reverse-phone-lookup/" target="_blank">AnyWho Phone</a></td><td>Reverse lookup.</td></tr>
+      <tr><td><a href="https://radaris.com/#findPhoneH" target="_blank">Radaris Phone</a></td><td>Identify phone owner.</td></tr>
+      <tr><td><a href="https://www.reversephonecheck.com/" target="_blank">ReversePhoneCheck</a></td><td>Reverse phone info.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- IMAGES -->
+<section id="images" data-category="Images">
+  <h2>🖼️ Images</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://images.google.com/" target="_blank">Google Images</a></td><td>Reverse and general image search.</td></tr>
+      <tr><td><a href="https://image.baidu.com/" target="_blank">Baidu Image</a></td><td>Baidu image search.</td></tr>
+      <tr><td><a href="https://images.search.yahoo.com/" target="_blank">Yahoo Image</a></td><td>Yahoo image search.</td></tr>
+      <tr><td><a href="https://www.yandex.com/images/" target="_blank">Yandex Images</a></td><td>Strong reverse image search.</td></tr>
+      <tr><td><a href="https://facecheck.id/" target="_blank">FaceCheck ID</a></td><td>Face-based people search.</td></tr>
+      <tr><td><a href="https://www.bing.com/visualsearch" target="_blank">Bing Visual Search</a></td><td>Visual search by image.</td></tr>
+      <tr><td><a href="https://www.reverseimagesearch.org/" target="_blank">ReverseImageSearch.org</a></td><td>Reverse image search tool.</td></tr>
+      <tr><td><a href="https://reverseimage.net/" target="_blank">ReverseImage.net</a></td><td>Find where images appear online.</td></tr>
+      <tr><td><a href="https://www.pixsy.com/" target="_blank">Pixsy</a></td><td>Image theft detection.</td></tr>
+      <tr><td><a href="https://pimeyes.com/" target="_blank">Pimeyes</a></td><td>Face search engine.</td></tr>
+      <tr><td><a href="http://www.pictriev.com/" target="_blank">Pictriev</a></td><td>Find look-alike celebrities.</td></tr>
+      <tr><td><a href="http://karmadecay.com/" target="_blank">Karma Decay</a></td><td>Reverse image search for Reddit.</td></tr>
+      <tr><td><a href="https://infringement.report/" target="_blank">Infringement Report</a></td><td>Image copyright detection.</td></tr>
+      <tr><td><a href="https://tineye.com/" target="_blank">TinEye</a></td><td>Reverse image search engine.</td></tr>
+      <tr><td><a href="https://flickr.com/search/" target="_blank">Flickr Search</a></td><td>Photo search.</td></tr>
+      <tr><td><a href="https://pic.sogou.com/" target="_blank">Sogou Images</a></td><td>Chinese image search.</td></tr>
+      <tr><td><a href="https://jimpl.com/" target="_blank">Jimpl</a></td><td>EXIF and metadata viewer.</td></tr>
+      <tr><td><a href="https://same.energy/" target="_blank">Same Energy</a></td><td>Visual similarity search.</td></tr>
+      <tr><td><a href="https://pixabay.com/" target="_blank">Pixabay</a></td><td>Free stock images.</td></tr>
+      <tr><td><a href="https://fotoforensics.com/" target="_blank">FotoForensics</a></td><td>Image forensics and ELA.</td></tr>
+      <tr><td><a href="http://exifdata.com/" target="_blank">Exif Data</a></td><td>Online EXIF viewer.</td></tr>
+      <tr><td><a href="https://www.imageidentify.com/" target="_blank">Image Identify</a></td><td>Wolfram image recognition.</td></tr>
+      <tr><td><a href="https://www.scamdigger.com/picsearch.php" target="_blank">ScamDigger PicSearch</a></td><td>Reverse image search for scams.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- THREAT INTELLIGENCE -->
+<section id="threat-intelligence" data-category="Threat Intelligence">
+  <h2>🛡️ Threat Intelligence</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://attack.mitre.org/" target="_blank">MITRE ATT&CK</a></td><td>Adversary tactics/techniques knowledge base.</td></tr>
+      <tr><td><a href="https://pulsedive.com/" target="_blank">Pulsedive</a></td><td>Threat intel platform and IOCs.</td></tr>
+      <tr><td><a href="https://threatcrowd.org/" target="_blank">ThreatCrowd</a></td><td>Threat search engine (domains/IPs/hashes).</td></tr>
+      <tr><td><a href="https://www.threatminer.org/" target="_blank">ThreatMiner</a></td><td>TI data mining/search.</td></tr>
+      <tr><td><a href="https://www.virustotal.com/" target="_blank">VirusTotal</a></td><td>Multi-AV scanning for files/URLs.</td></tr>
+      <tr><td><a href="https://vx-underground.org/" target="_blank">VX-Underground</a></td><td>Malware source code and papers.</td></tr>
+      <tr><td><a href="https://bazaar.abuse.ch/browse/" target="_blank">MalwareBazaar</a></td><td>Malware sample DB by abuse.ch.</td></tr>
+      <tr><td><a href="https://feodotracker.abuse.ch/browse/" target="_blank">Feodo Tracker</a></td><td>Botnet C2 tracking.</td></tr>
+      <tr><td><a href="https://www.joesandbox.com/" target="_blank">Joe Sandbox</a></td><td>Sandboxing and hunting.</td></tr>
+      <tr><td><a href="https://sslbl.abuse.ch/ssl-certificates/" target="_blank">SSL Blacklist</a></td><td>Malicious SSL certs.</td></tr>
+      <tr><td><a href="https://urlhaus.abuse.ch/browse/" target="_blank">URLHaus</a></td><td>Malware URLs feed.</td></tr>
+      <tr><td><a href="https://threatfox.abuse.ch/browse/" target="_blank">ThreatFox</a></td><td>IOC database.</td></tr>
+      <tr><td><a href="https://yaraify.abuse.ch/" target="_blank">YARAify</a></td><td>Scan files with YARA rules.</td></tr>
+      <tr><td><a href="https://rescure.me/" target="_blank">Rescure</a></td><td>Curated TI for everyone.</td></tr>
+      <tr><td><a href="https://otx.alienvault.com/" target="_blank">OTX AlienVault</a></td><td>Open TI community and pulses.</td></tr>
+      <tr><td><a href="https://urlquery.net/" target="_blank">urlquery</a></td><td>Analyze web-based malware.</td></tr>
+      <tr><td><a href="https://socradar.io/" target="_blank">SOCRadar</a></td><td>External attack surface + TI.</td></tr>
+      <tr><td><a href="https://virusshare.com/" target="_blank">VirusShare</a></td><td>Large malware sample repository.</td></tr>
+      <tr><td><a href="https://www.riskiq.com/products/passivetotal/" target="_blank">PassiveTotal (RiskIQ)</a></td><td>Internet intelligence platform.</td></tr>
+      <tr><td><a href="https://malapi.io/" target="_blank">malapi.io</a></td><td>Windows APIs used by malware.</td></tr>
+      <tr><td><a href="https://filesec.io/" target="_blank">filesec.io</a></td><td>File extensions abused by attackers.</td></tr>
+      <tr><td><a href="https://leakix.net/" target="_blank">LeakIX</a></td><td>Public exposure search engine.</td></tr>
+      <tr><td><a href="https://tria.ge/s" target="_blank">Triage</a></td><td>Automated malware sandboxing.</td></tr>
+      <tr><td><a href="https://polyswarm.network/" target="_blank">PolySwarm</a></td><td>Crowd-sourced threat detection.</td></tr>
+      <tr><td><a href="https://talosintelligence.com/" target="_blank">Cisco Talos</a></td><td>Cisco's TI and research.</td></tr>
+      <tr><td><a href="https://scamsearch.io/#anchorCeckNow" target="_blank">ScamSearch</a></td><td>Find/report scammers.</td></tr>
+      <tr><td><a href="http://www.cybercampaigns.net/" target="_blank">CyberCampaigns</a></td><td>Threat actor info/write-ups.</td></tr>
+      <tr><td><a href="https://orkl.eu/" target="_blank">ORKL</a></td><td>Community-driven CTI library.</td></tr>
+      <tr><td><a href="https://maltiverse.com/search" target="_blank">Maltiverse</a></td><td>Aggregated TI from 100+ sources.</td></tr>
+      <tr><td><a href="https://labs.inquest.net/" target="_blank">InQuest Labs</a></td><td>TI for FDR signatures/rules.</td></tr>
+      <tr><td><a href="https://phishtank.org/" target="_blank">PhishTank</a></td><td>Community phishing data.</td></tr>
+      <tr><td><a href="https://github.com/intelowlproject/IntelOwl" target="_blank">IntelOwl</a></td><td>OSINT/TI meta-API.</td></tr>
+      <tr><td><a href="https://prowl.lupovis.io/" target="_blank">Lupovis PROWL</a></td><td>Live scan/attack telemetry.</td></tr>
+      <tr><td><a href="https://www.abuseipdb.com/" target="_blank">AbuseIPDB</a></td><td>IP abuse reports and reputation.</td></tr>
+      <tr><td><a href="https://sitecheck.sucuri.net/" target="_blank">Sucuri SiteCheck</a></td><td>Website malware scanner.</td></tr>
+      <tr><td><a href="https://spamhaus.com/" target="_blank">Spamhaus</a></td><td>IP/domain reputation data.</td></tr>
+      <tr><td><a href="https://threatbook.io/" target="_blank">ThreatBook</a></td><td>TI platform.</td></tr>
+      <tr><td><a href="https://www.shadowserver.org/" target="_blank">Shadowserver</a></td><td>Non-profit Internet security data.</td></tr>
+      <tr><td><a href="https://www.team-cymru.com/" target="_blank">Team Cymru</a></td><td>TI and ASM solutions.</td></tr>
+      <tr><td><a href="https://bevigil.com/" target="_blank">BeVigil</a></td><td>Mobile app security search.</td></tr>
+      <tr><td><a href="https://www.circl.lu/" target="_blank">CIRCL</a></td><td>National CERT services and tools.</td></tr>
+      <tr><td><a href="https://metadefender.opswat.com/" target="_blank">MetaDefender Cloud</a></td><td>Advanced scanning and analysis.</td></tr>
+      <tr><td><a href="https://cybersixgill.com/" target="_blank">Cybersixgill</a></td><td>Dark web monitoring and TI.</td></tr>
+      <tr><td><a href="https://www.hybrid-analysis.com/" target="_blank">Hybrid Analysis</a></td><td>Free malware analysis service.</td></tr>
+      <tr><td><a href="https://exchange.xforce.ibmcloud.com/" target="_blank">IBM X-Force Exchange</a></td><td>TI sharing platform.</td></tr>
+      <tr><td><a href="https://thedfirreport.com/" target="_blank">The DFIR Report</a></td><td>Real intrusion case studies.</td></tr>
+      <tr><td><a href="https://detection.fyi/" target="_blank">Detection.FYI</a></td><td>Sigma rules search.</td></tr>
+      <tr><td><a href="https://www.whoisxmlapi.com/" target="_blank">WhoisXML API</a></td><td>Domain/IP intelligence APIs.</td></tr>
+      <tr><td><a href="https://www.apivoid.com/" target="_blank">APIVoid</a></td><td>IP/Domain reputation and tools.</td></tr>
+      <tr><td><a href="https://app.any.run/submissions" target="_blank">ANY.RUN</a></td><td>Interactive malware sandbox.</td></tr>
+      <tr><td><a href="https://www.filescan.io/reports" target="_blank">Filescan.io</a></td><td>File/URL/IOC report search.</td></tr>
+      <tr><td><a href="https://malshare.com/" target="_blank">MalShare</a></td><td>Public malware repository.</td></tr>
+      <tr><td><a href="https://opentip.kaspersky.com/requests" target="_blank">Kaspersky OpenTIP</a></td><td>Scan files/domains/IPs/URLs.</td></tr>
+      <tr><td><a href="https://malwares.com/" target="_blank">Malwares.com</a></td><td>Malware search and analysis.</td></tr>
+      <tr><td><a href="https://www.apklab.io/" target="_blank">APKLab</a></td><td>Android malware intel platform.</td></tr>
+      <tr><td><a href="https://www.scumware.org/search.php" target="_blank">Scumware</a></td><td>Latest malware reports.</td></tr>
+      <tr><td><a href="https://br0k3nlab.com/LoFP/" target="_blank">LoFP</a></td><td>Collection of common false positives.</td></tr>
+      <tr><td><a href="https://hijacklibs.net/" target="_blank">HijackLibs</a></td><td>DLL hijacking opportunities.</td></tr>
+      <tr><td><a href="https://www.bootloaders.io/" target="_blank">bootloaders.io</a></td><td>Known malicious bootloaders.</td></tr>
+      <tr><td><a href="https://wtfbins.wtf/" target="_blank">WTFBins</a></td><td>Benign apps with suspicious behavior.</td></tr>
+      <tr><td><a href="https://lofl-project.github.io/" target="_blank">LOFLCAB</a></td><td>Living off foreign land (non-native tools).</td></tr>
+      <tr><td><a href="https://opsecfail.github.io/" target="_blank">OpSecFailure</a></td><td>Examples of OPSEC mistakes.</td></tr>
+      <tr><td><a href="https://traildiscover.cloud/" target="_blank">TrailDiscover</a></td><td>CloudTrail events knowledgebase.</td></tr>
+      <tr><td><a href="https://www.scamdb.net/" target="_blank">ScamDB</a></td><td>Report and search scams.</td></tr>
+      <tr><td><a href="https://openphish.com/" target="_blank">OpenPhish</a></td><td>Phishing intelligence feeds.</td></tr>
+      <tr><td><a href="https://threatintelligenceplatform.com/" target="_blank">ThreatIntelligencePlatform</a></td><td>Automated TI tools and APIs.</td></tr>
+      <tr><td><a href="https://hunt.io/" target="_blank">Hunt.io</a></td><td>Observed scanning/attack intel.</td></tr>
+      <tr><td><a href="https://lolc2.github.io/" target="_blank">LOLC2</a></td><td>C2 frameworks over legit services.</td></tr>
+      <tr><td><a href="https://seized.fyi/" target="_blank">seized.fyi</a></td><td>List of seized websites.</td></tr>
+      <tr><td><a href="https://infotrail.io/" target="_blank">InfoTrail</a></td><td>Advanced OSINT/TI search engine.</td></tr>
+      <tr><td><a href="https://rulehound.com/rules" target="_blank">RuleHound</a></td><td>Index of detection rulesets.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- WEB HISTORY -->
+<section id="web-history" data-category="Web History">
+  <h2>🕰️ Web History</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://web.archive.org/" target="_blank">Internet Archive</a></td><td>Historical copies of web pages.</td></tr>
+      <tr><td><a href="https://archive.ph/" target="_blank">Archive.ph</a></td><td>Permanent web page snapshots.</td></tr>
+      <tr><td><a href="http://www.cachedpages.com/" target="_blank">CachedPages</a></td><td>Retrieve cached versions of URLs.</td></tr>
+      <tr><td><a href="https://stored.website/" target="_blank">stored.website</a></td><td>View cached websites.</td></tr>
+      <tr><td><a href="https://commoncrawl.org/" target="_blank">CommonCrawl</a></td><td>Open web crawl data.</td></tr>
+      <tr><td><a href="https://www.webarchive.org.uk/ukwa/" target="_blank">UK Web Archive</a></td><td>UK website archiving.</td></tr>
+      <tr><td><a href="https://arquivo.pt/" target="_blank">Arquivo.pt</a></td><td>Portuguese web archive.</td></tr>
+      <tr><td><a href="https://archive-it.org/" target="_blank">Archive-It</a></td><td>Archiving for institutions/NGOs.</td></tr>
+      <tr><td><a href="https://haw.nsk.hr/en/" target="_blank">HAW</a></td><td>Croatian web archive.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- FILES -->
+<section id="files" data-category="Files">
+  <h2>📁 Files</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://pastebin.com/" target="_blank">Pastebin</a></td><td>Share text snippets online.</td></tr>
+      <tr><td><a href="https://mega.nz/" target="_blank">MEGA</a></td><td>Encrypted cloud storage and sharing.</td></tr>
+      <tr><td><a href="https://www.4s.io/" target="_blank">4S.io</a></td><td>File search/store/share.</td></tr>
+      <tr><td><a href="https://files.fm/discover" target="_blank">files.fm</a></td><td>Community-shared files.</td></tr>
+      <tr><td><a href="https://www.edisk.cz/" target="_blank">edisk.cz</a></td><td>File storage and search.</td></tr>
+      <tr><td><a href="https://doodstream.com.tr/search-engine/" target="_blank">DoodStream Search</a></td><td>DoodStream file search.</td></tr>
+      <tr><td><a href="http://www.uvrx.com/" target="_blank">UVRX Search</a></td><td>File storage search engine.</td></tr>
+      <tr><td><a href="https://filesearch.link/" target="_blank">filesearch.link</a></td><td>Search archives, media, books, etc.</td></tr>
+      <tr><td><a href="https://rapidgators.net/file-search/" target="_blank">Rapidgator Search</a></td><td>Rapidgator file search.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SURVEILLANCE CAMERAS -->
+<section id="surveillance-cameras" data-category="Surveillance Cameras">
+  <h2>📹 Surveillance Cameras</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="http://www.insecam.org/en/" target="_blank">Insecam</a></td><td>Directory of online surveillance cameras.</td></tr>
+      <tr><td><a href="https://sunders.uber.space/" target="_blank">Surveillance under Surveillance</a></td><td>Public cameras and guards map.</td></tr>
+      <tr><td><a href="https://worldcams.tv/" target="_blank">World Cams</a></td><td>Live streaming webcams.</td></tr>
+      <tr><td><a href="https://www.skylinewebcams.com/" target="_blank">SkylineWebcams</a></td><td>Live HD webcams worldwide.</td></tr>
+      <tr><td><a href="https://www.webkams.com/" target="_blank">WebKams</a></td><td>Live webcams directory.</td></tr>
+      <tr><td><a href="https://worldcam.eu/" target="_blank">WorldCam</a></td><td>Global webcam index.</td></tr>
+      <tr><td><a href="https://www.webcamhopper.com/" target="_blank">Webcam Hopper</a></td><td>Worldwide live webcams.</td></tr>
+      <tr><td><a href="https://livetraffic.eu/" target="_blank">Live Traffic</a></td><td>Live EU traffic cameras.</td></tr>
+      <tr><td><a href="https://www.geocam.ru/en/" target="_blank">Geocam.ru</a></td><td>World webcams map.</td></tr>
+      <tr><td><a href="https://www.border.gov.md/camere-web" target="_blank">Moldova Borders Webcams</a></td><td>Official border webcams.</td></tr>
+      <tr><td><a href="https://www.earthcam.com/" target="_blank">EarthCam</a></td><td>Tourism/entertainment webcams.</td></tr>
+      <tr><td><a href="https://www.webcamtaxi.com/en/" target="_blank">Webcam Taxi</a></td><td>Virtual travel via webcams.</td></tr>
+      <tr><td><a href="https://liveworldwebcams.com/" target="_blank">LiveWorldWebcams</a></td><td>Live streaming webcams.</td></tr>
+      <tr><td><a href="https://www.allecam.com/" target="_blank">AlleCam</a></td><td>Webcams across Europe/world.</td></tr>
+      <tr><td><a href="https://wxyzwebcams.com/" target="_blank">WXYZ Webcams</a></td><td>Real-time webcams.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- CRYPTO -->
+<section id="crypto" data-category="Crypto">
+  <h2>₿ Crypto</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://www.chainabuse.com/" target="_blank">ChainAbuse</a></td><td>Report malicious crypto activity.</td></tr>
+      <tr><td><a href="https://blockchair.com/" target="_blank">Blockchair</a></td><td>Multi-chain explorer and analytics.</td></tr>
+      <tr><td><a href="https://live.blockcypher.com/" target="_blank">BlockCypher</a></td><td>Blockchain explorer.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- PEOPLE (lanjutan dari yang terputus) -->
+<section id="people">
+  <h2>👤 People</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://www.truepeoplesearch.com/" target="_blank">TruePeopleSearch</a></td><td>Free US public records search.</td></tr>
+      <tr><td><a href="https://www.truthfinder.com/people-search/" target="_blank">TruthFinder</a></td><td>People search by name.</td></tr>
+      <tr><td><a href="https://www.beenverified.com/" target="_blank">BeenVerified</a></td><td>Public records and contact info.</td></tr>
+      <tr><td><a href="https://www.zabasearch.com/" target="_blank">ZabaSearch</a></td><td>Free people and public info search.</td></tr>
+      <tr><td><a href="https://www.peekyou.com/" target="_blank">PeekYou</a></td><td>People search and profiles.</td></tr>
+      <tr><td><a href="https://www.peoplefinders.com/people-search" target="_blank">PeopleFinders</a></td><td>People search service.</td></tr>
+      <tr><td><a href="https://pipl.com/" target="_blank">Pipl</a></td><td>Identity and trust data (B2B).</td></tr>
+      <tr><td><a href="https://thatsthem.com/people-search" target="_blank">That'sThem People</a></td><td>Find contact details by name.</td></tr>
+      <tr><td><a href="http://snitch.name/" target="_blank">snitch.name</a></td><td>Social profiles lookup.</td></tr>
+      <tr><td><a href="https://webmii.com/" target="_blank">Webmii</a></td><td>People search engine.</td></tr>
+      <tr><td><a href="https://www.fastpeoplesearch.com/" target="_blank">FastPeopleSearch</a></td><td>Name/phone/address search.</td></tr>
+      <tr><td><a href="https://sortedbyname.com/" target="_blank">Sorted By Name</a></td><td>Genealogy links and references.</td></tr>
+      <tr><td><a href="https://radaris.com/" target="_blank">Radaris</a></td><td>People and background data.</td></tr>
+      <tr><td><a href="https://www.addresses.com/" target="_blank">Addresses.com</a></td><td>People search and public info.</td></tr>
+      <tr><td><a href="https://www.advancedbackgroundchecks.com/" target="_blank">Advanced Background Checks</a></td><td>Free people search.</td></tr>
+      <tr><td><a href="http://www.yasni.com/" target="_blank">Yasni</a></td><td>People search (news, photos, links).</td></tr>
+      <tr><td><a href="https://usa-official.com/" target="_blank">USA Data Search</a></td><td>US public data index.</td></tr>
+      <tr><td><a href="https://www.anywho.com/" target="_blank">AnyWho</a></td><td>People and business directory.</td></tr>
+      <tr><td><a href="https://com.lullar.com/" target="_blank">Lullar</a></td><td>Profile search by email/name/username.</td></tr>
+      <tr><td><a href="https://www.ancestry.com/search/" target="_blank">Ancestry</a></td><td>Genealogical records search.</td></tr>
+      <tr><td><a href="https://www.genealogy.com/" target="_blank">Genealogy.com</a></td><td>Genealogy forums and articles.</td></tr>
+      <tr><td><a href="https://www.ussearch.com/" target="_blank">US Search</a></td><td>Public records and background checks.</td></tr>
+      <tr><td><a href="https://search.findmypast.com/search-world-records" target="_blank">Findmypast</a></td><td>Historical records and genealogy.</td></tr>
+      <tr><td><a href="https://www.familysearch.org/search/" target="_blank">FamilySearch</a></td><td>Free genealogical records.</td></tr>
+      <tr><td><a href="http://itools.com/tool/wink-people-search" target="_blank">iTools Wink Search</a></td><td>People search meta-tool.</td></tr>
+      <tr><td><a href="https://www.intelius.com/" target="_blank">Intelius</a></td><td>Public data and connections.</td></tr>
+      <tr><td><a href="https://whatsmyname.app/" target="_blank">WhatsMyName</a></td><td>Enumerate usernames across sites.</td></tr>
+      <tr><td><a href="https://www.namecheckr.com/" target="_blank">Namecheckr</a></td><td>Social and domain availability.</td></tr>
+      <tr><td><a href="https://www.user-searcher.com/" target="_blank">Username Search</a></td><td>Reverse username search.</td></tr>
+      <tr><td><a href="https://theorg.com/" target="_blank">The Org</a></td><td>Public org charts.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- MISCELLANEOUS -->
+<section id="miscellaneous">
+  <h2>🔧 Miscellaneous</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://dorksearch.com/" target="_blank">DorkSearch</a></td><td>Speed up Google dorking.</td></tr>
+      <tr><td><a href="https://usersearch.org/" target="_blank">usersearch.org</a></td><td>Find someone by username/email across sites.</td></tr>
+      <tr><td><a href="https://www.wappalyzer.com/" target="_blank">Wappalyzer</a></td><td>Website technology fingerprinting.</td></tr>
+      <tr><td><a href="https://awakari.com/" target="_blank">Awakari</a></td><td>Real-time search across RSS, Fediverse, Telegram, etc.</td></tr>
+      <tr><td><a href="https://caniuse.com/" target="_blank">Can I use</a></td><td>Browser support tables.</td></tr>
+      <tr><td><a href="https://darkvisitors.com/" target="_blank">Dark Visitors</a></td><td>Track/control AI crawlers.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- NOT WORKING / PAUSED -->
+<section id="not-working--paused">
+  <h2>⚠️ Not Working / Paused</h2>
+  <table class="resourceTable">
+    <thead>
+      <tr><th>Resource</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://dns.bufferover.run/" target="_blank">DNS BufferOver</a></td><td>Currently offline.</td></tr>
+      <tr><td><a href="https://netograph.io/" target="_blank">NetoGraph</a></td><td>Service inactive.</td></tr>
+      <tr><td><a href="https://hashdd.com/" target="_blank">Hashdd</a></td><td>Service paused.</td></tr>
+      <tr><td><a href="https://cvetrends.com/" target="_blank">CVE Trends</a></td><td>Unavailable / paused.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    © 2024 — <strong>Awesome Hacker Search Engines</strong><br>
+    Built with ❤️ for the infosec community<br>
+    <a href="https://github.com/123tool" target="_blank">🔗 My GitHub: @123tool</a>
+  </p>
+</footer>
+
+</body>
+</html>

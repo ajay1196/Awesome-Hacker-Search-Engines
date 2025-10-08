@@ -1,0 +1,250 @@
+/* ==================== RESET ==================== */
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* ==================== ROOT VARIABLES ==================== */
+:root {
+  --bg: #fdfdfd;
+  --text: #222;
+  --header-bg: #0070c9;
+  --table-even: #f5f9ff;
+  --table-hover: #e3f2fd;
+  --border: #ddd;
+  --link: #0066d6;
+  --link-hover: #c00;
+  --toc-bg: #eaf3ff;
+  --toc-hover: #d0e7ff;
+  --control-bg: #333;
+  --control-text: #fff;
+}
+
+body.dark-mode {
+  --bg: #1a1a1a;
+  --text: #e0e0e0;
+  --header-bg: #005a9e;
+  --table-even: #252525;
+  --table-hover: #333;
+  --border: #444;
+  --link: #4da6ff;
+  --link-hover: #ff6666;
+  --toc-bg: #2a3f5f;
+  --toc-hover: #1e2f4a;
+  --control-bg: #444;
+  --control-text: #fff;
+}
+
+/* ==================== TYPOGRAPHY & LAYOUT ==================== */
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  padding: 1.5rem 0 5rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  max-width: 920px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+h2 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.3rem;
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--link-hover);
+}
+
+.badges {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.badges img {
+  height: 28px;
+  margin: 0 0.25rem;
+}
+
+blockquote {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 0.75rem 1.2rem;
+  background: var(--table-even);
+  border-left: 4px solid var(--header-bg);
+  font-style: italic;
+}
+
+.note {
+  max-width: 800px;
+  margin: 0.75rem auto 1.5rem;
+  font-size: 0.92rem;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+/* ==================== GLOBAL SEARCH ==================== */
+#globalSearch {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 0.65rem 1rem;
+  width: min(500px, 90%);
+  font-size: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  transition: border-color 0.3s;
+}
+#globalSearch:focus {
+  outline: none;
+  border-color: var(--header-bg);
+}
+
+/* ==================== TABLE OF CONTENTS ==================== */
+#toc {
+  max-width: 960px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+#toc h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5rem;
+}
+.toc-grid a {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  background: var(--toc-bg);
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.toc-grid a:hover {
+  background: var(--toc-hover);
+}
+
+/* ==================== MAIN CONTENT ==================== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* ==================== TABLES ==================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+th, td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--border);
+}
+
+th {
+  background: var(--header-bg);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+tbody tr {
+  transition: background 0.2s;
+}
+tbody tr:nth-child(even) {
+  background: var(--table-even);
+}
+tbody tr:hover {
+  background: var(--table-hover);
+}
+tbody tr.hide {
+  display: none;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+  margin-top: 4rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text);
+  opacity: 0.8;
+  border-top: 1px solid var(--border);
+}
+footer a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ==================== FLOATING CONTROLS ==================== */
+#controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+#controls button {
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: var(--control-bg);
+  color: var(--control-text);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s, background 0.2s;
+}
+
+#controls button:hover {
+  transform: translateY(-3px);
+  background: var(--header-bg);
+}
+
+#controls button:active {
+  transform: scale(0.95);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.3rem; }
+  .toc-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  #controls { bottom: 10px; right: 10px; }
+  #controls button { padding: 0.5rem 0.7rem; font-size: 0.85rem; }
+}
